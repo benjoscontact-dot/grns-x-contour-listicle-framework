@@ -3,37 +3,36 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { ShieldCheck, Star, Truck, RotateCcw, Award, Users } from 'lucide-react'
 
-// PLACEHOLDER: Replace labels with your actual trust signals
 const TRUST_BADGES = [
   {
     icon: ShieldCheck,
-    title: '[PLACEHOLDER: Trust signal 1]',
-    subtitle: '[PLACEHOLDER: e.g. "180-Day Money Back Guarantee"]',
+    title: '30-Day Money-Back Guarantee',
+    subtitle: 'Wear them for 30 days. Not feeling the difference? Full refund — no questions asked.',
   },
   {
     icon: Star,
-    title: '[PLACEHOLDER: Trust signal 2]',
-    subtitle: '[PLACEHOLDER: e.g. "80,000+ Five-Star Reviews"]',
+    title: '4.7 Stars · 39+ Reviews',
+    subtitle: 'Real verified customers. Not paid endorsements.',
   },
   {
     icon: Truck,
-    title: '[PLACEHOLDER: Trust signal 3]',
-    subtitle: '[PLACEHOLDER: e.g. "Free Shipping On All Orders"]',
+    title: 'Free Shipping on All Orders',
+    subtitle: 'No minimum. Ships fast.',
   },
   {
     icon: RotateCcw,
-    title: '[PLACEHOLDER: Trust signal 4]',
-    subtitle: '[PLACEHOLDER: e.g. "Cancel or Pause Anytime"]',
+    title: 'Free Replacement If Anything\'s Off',
+    subtitle: 'If your pair doesn\'t set right, we send a new kit at no charge.',
   },
   {
     icon: Award,
-    title: '[PLACEHOLDER: Trust signal 5]',
-    subtitle: '[PLACEHOLDER: e.g. "Clinically Tested Formula"]',
+    title: 'University of Tokyo Tested',
+    subtitle: 'Independently tested for biomechanical performance.',
   },
   {
     icon: Users,
-    title: '[PLACEHOLDER: Trust signal 6]',
-    subtitle: '[PLACEHOLDER: e.g. "1M+ Happy Customers"]',
+    title: '20,000+ Feet Fitted',
+    subtitle: 'Designed by Dr. Tim T. Nguyen, DPM — 40+ years in practice.',
   },
 ]
 
@@ -51,9 +50,8 @@ export default function TrustStrip() {
           transition={{ duration: 0.5 }}
           className="text-center mb-10"
         >
-          {/* PLACEHOLDER: Trust section heading */}
           <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground">
-            [PLACEHOLDER: Trust section heading — e.g. "Why Customers Trust Us"]
+            Why Customers Trust Contour
           </h2>
         </motion.div>
 

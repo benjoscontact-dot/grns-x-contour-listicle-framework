@@ -1,0 +1,126 @@
+import { motion } from 'framer-motion'
+import { useInView } from 'framer-motion'
+import { useRef } from 'react'
+import { Droplets, Footprints, CheckCircle } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+
+const STEPS = [
+  {
+    number: '01',
+    icon: Droplets,
+    title: 'Inject Water',
+    body: '10cc from the included syringe into the insole. Takes 30 seconds. The HydroFit core is now ready to receive your shape.',
+    detail: 'Included in every box: insole + pre-filled syringe.',
+  },
+  {
+    number: '02',
+    icon: Footprints,
+    title: 'Walk to Mold',
+    body: 'Place in your shoes. Walk for ~5 minutes. The HydroFit core molds precisely to your arch, heel, and pressure points — under your real bodyweight, in motion. Not a static impression. Your actual gait.',
+    detail: 'Unlike clinic molds taken standing still, this captures how your foot actually moves.',
+  },
+  {
+    number: '03',
+    icon: CheckCircle,
+    title: 'Relax and Set',
+    body: 'Sit for ~10 minutes. The material sets firm — permanently locking your custom shape. No liquid left inside. No air pockets. No squeaking. A rigid custom shell, like any prescription orthotic. Done.',
+    detail: 'Sits at factory insole profile. Remove your old insole, drop Contour in.',
+  },
+]
+
+export default function HowItWorks() {
+  const ref = useRef(null)
+  const inView = useInView(ref, { once: true, margin: '-60px' })
+
+  return (
+    <section id="how-it-works" className="py-16 md:py-24 px-4" style={{ background: 'hsl(var(--secondary))' }}>
+      <div className="max-w-4xl mx-auto">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 24 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
+          <span
+            className="text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full inline-block mb-4"
+            style={{ background: 'hsl(var(--primary) / 0.1)', color: 'hsl(var(--primary))' }}
+          >
+            The Mechanism
+          </span>
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
+            How Contour Custom Pro Works
+          </h2>
+          <p className="text-muted-foreground mt-3 text-base md:text-lg max-w-xl mx-auto">
+            Designed so you can't get it wrong. The material self-corrects under your weight. If your pair doesn't set right, we replace it free.
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+          {STEPS.map((step, i) => {
+            const Icon = step.icon
+            return (
+              <motion.div
+                key={step.number}
+                initial={{ opacity: 0, y: 28 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.55, delay: i * 0.12 }}
+                className="relative flex flex-col gap-4 rounded-2xl border border-border bg-background p-6"
+                style={{ boxShadow: 'var(--shadow-card)' }}
+              >
+                {/* Step number watermark */}
+                <span
+                  className="font-heading text-6xl font-extrabold leading-none select-none absolute top-4 right-5 opacity-[0.07]"
+                  style={{ color: 'hsl(var(--foreground))' }}
+                >
+                  {step.number}
+                </span>
+
+                <div
+                  className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style={{ background: 'hsl(var(--primary) / 0.1)' }}
+                >
+                  <Icon className="w-6 h-6" style={{ color: 'hsl(var(--primary))' }} />
+                </div>
+
+                <div className="flex flex-col gap-2">
+                  <h3 className="font-heading text-lg font-bold text-foreground">
+                    Step {step.number} — {step.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm leading-relaxed">{step.body}</p>
+                </div>
+
+                <div
+                  className="rounded-lg px-3 py-2 text-xs font-medium border-l-4 mt-auto"
+                  style={{
+                    background: 'hsl(var(--secondary))',
+                    borderColor: 'hsl(var(--primary))',
+                    color: 'hsl(var(--muted-foreground))',
+                  }}
+                >
+                  {step.detail}
+                </div>
+              </motion.div>
+            )
+          })}
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="flex flex-col items-center gap-3"
+        >
+          <Button
+            size="lg"
+            className="rounded-full px-10 font-bold transition-transform hover:scale-105"
+            style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))', boxShadow: 'var(--shadow-cta)' }}
+          >
+            Get Your Custom Fit — $239
+          </Button>
+          <p className="text-xs text-muted-foreground">Free shipping · 30-day guarantee · Free replacement if anything's off</p>
+        </motion.div>
+      </div>
+    </section>
+  )
+}

@@ -4,12 +4,11 @@ import { useRef } from 'react'
 import { ShieldCheck, Check } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
-// PLACEHOLDER: Final CTA section closing perks list
 const CLOSING_PERKS = [
-  '[PLACEHOLDER: Closing perk 1 — e.g. "Free Shipping Today"]',
-  '[PLACEHOLDER: Closing perk 2 — e.g. "180-Day Money Back Guarantee"]',
-  '[PLACEHOLDER: Closing perk 3 — e.g. "Cancel Anytime — No Lock-In"]',
-  '[PLACEHOLDER: Closing perk 4 — e.g. "Results in [X] Days or Your Money Back"]',
+  'Free Shipping on Every Order',
+  '30-Day Money-Back Guarantee — You Keep the Orthotics',
+  'Free Replacement if Molding Goes Wrong',
+  'Lasts 2–3+ Years (~$0.25/day)',
 ]
 
 export default function FinalCTA() {
@@ -31,17 +30,15 @@ export default function FinalCTA() {
             className="text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full"
             style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))' }}
           >
-            [PLACEHOLDER: Urgency tag — e.g. "Limited Time Offer"]
+            Free Shipping · 30-Day Guarantee
           </span>
 
-          {/* PLACEHOLDER: Final headline */}
           <h2 className="font-heading text-3xl md:text-5xl font-extrabold leading-tight" style={{ color: 'hsl(0 0% 100%)' }}>
-            [PLACEHOLDER: Closing headline — strong, outcome-driven, e.g. "Start Walking Without Pain Today"]
+            Stop Waiting. Start Walking Without Pain.
           </h2>
 
-          {/* PLACEHOLDER: Closing subtext */}
           <p className="text-base md:text-lg" style={{ color: 'hsl(0 0% 100% / 0.65)' }}>
-            [PLACEHOLDER: Closing body — 1–2 sentences reinforcing the offer and removing risk. e.g. "Join 20,000+ customers who've already made the switch. Try it risk-free for 180 days."]
+            We know you've been burned before. That's why we don't ask you to trust us on day one — we ask you to try us. Wear them for 30 days. If you're not feeling the difference, we'll send a free replacement pair or refund every penny. No restocking fee. No return shipping. The orthotics are yours either way.
           </p>
 
           {/* Perks list */}
@@ -57,19 +54,16 @@ export default function FinalCTA() {
           {/* Pricing summary */}
           <div className="flex items-baseline gap-3 mt-2">
             <span className="font-heading text-4xl font-extrabold" style={{ color: 'hsl(0 0% 100%)' }}>
-              {/* PLACEHOLDER: Sale price */}
-              $[XX.XX]
+              $239
             </span>
             <span className="text-lg line-through" style={{ color: 'hsl(0 0% 100% / 0.4)' }}>
-              {/* PLACEHOLDER: Original price */}
-              $[XX.XX]
+              $299
             </span>
             <span
               className="text-xs font-bold uppercase rounded-full px-3 py-1"
               style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))' }}
             >
-              {/* PLACEHOLDER: Discount badge */}
-              SAVE [X]%
+              SAVE 20%
             </span>
           </div>
 
@@ -79,15 +73,13 @@ export default function FinalCTA() {
             className="w-full max-w-sm rounded-full py-6 text-lg font-bold transition-transform hover:scale-105"
             style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))', boxShadow: 'var(--shadow-cta)' }}
           >
-            {/* PLACEHOLDER: Final CTA label */}
-            [PLACEHOLDER: Final CTA — e.g. "Claim My Discount + Free Shipping"]
+            Get Your Custom Fit — $239 + Free Shipping
           </Button>
 
           {/* Guarantee micro-copy */}
           <div className="flex items-center gap-2 text-sm" style={{ color: 'hsl(0 0% 100% / 0.55)' }}>
             <ShieldCheck className="w-4 h-4" style={{ color: 'hsl(var(--primary))' }} />
-            {/* PLACEHOLDER: Guarantee micro-copy */}
-            [PLACEHOLDER: Guarantee line — e.g. "180-Day Money Back Guarantee. No questions asked."]
+            30-Day Money-Back Guarantee. You keep the orthotics either way.
           </div>
         </motion.div>
       </div>

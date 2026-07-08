@@ -3,11 +3,11 @@ import { ShieldCheck, Star } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 const BENEFIT_ICONS = [
-  { label: '[PLACEHOLDER: Benefit 1]' },
-  { label: '[PLACEHOLDER: Benefit 2]' },
-  { label: '[PLACEHOLDER: Benefit 3]' },
-  { label: '[PLACEHOLDER: Benefit 4]' },
-  { label: '[PLACEHOLDER: Benefit 5]' },
+  { label: 'Molds in 15 min at home' },
+  { label: 'No appointments needed' },
+  { label: 'No insurance fights' },
+  { label: 'Fits any shoe' },
+  { label: 'Free replacement guarantee' },
 ]
 
 export default function HeroSection() {
@@ -20,8 +20,7 @@ export default function HeroSection() {
           className="hidden md:flex items-center justify-center rounded-xl px-6 py-3 mb-6 font-bold uppercase tracking-widest text-sm"
           style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))' }}
         >
-          {/* PLACEHOLDER: Sale banner text e.g. "SUMMER SALE: SAVE UP TO 52% + FREE GIFTS" */}
-          [PLACEHOLDER: SALE BANNER — e.g. "SAVE UP TO 52% + FREE SHIPPING"]
+          ✦ Patented HydroFit Technology · University of Tokyo Tested · 20,000+ Feet Fitted
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -51,24 +50,20 @@ export default function HeroSection() {
                   <Star key={i} className="w-3 h-3 fill-current" style={{ color: 'hsl(38 92% 50%)' }} />
                 ))}
               </div>
-              {/* PLACEHOLDER: Social proof numbers */}
               <span className="text-xs font-medium text-foreground">
-                [X.X] stars | [XX]K+ reviews | [X]M+ customers
+                4.7 stars · 39+ verified reviews
               </span>
             </div>
 
             {/* Main headline */}
             <h1 className="font-heading text-4xl md:text-5xl font-bold leading-tight text-foreground">
-              {/* PLACEHOLDER: Listicle headline e.g. "6 Reasons Why [Product] Is Your [Benefit]" */}
-              <span style={{ color: 'hsl(var(--primary))' }}>[X] Reasons</span> Why{' '}
-              [Product Name] Is{' '}
-              <span style={{ color: 'hsl(var(--primary))' }}>[Hero Benefit Statement]</span>
+              <span style={{ color: 'hsl(var(--primary))' }}>6 Reasons</span> You Still Don't Have the Custom Orthotics{' '}
+              <span style={{ color: 'hsl(var(--primary))' }}>You Know You Need</span>
             </h1>
 
             {/* Subheadline / hook */}
             <p className="text-muted-foreground text-lg leading-relaxed">
-              {/* PLACEHOLDER: Opening hook paragraph — 2-3 sentences setting up the problem/solution */}
-              [PLACEHOLDER: Opening hook — describe the problem your customer faces and how your product solves it. 2–3 sentences max.]
+              You already know orthotics would help. Your feet remind you every morning. But between the appointments, the insurance fights, and the $500+ price tags — getting them has felt like its own kind of pain. Here's why it's not your fault, and what finally changed.
             </p>
 
             {/* CTA block */}
@@ -82,13 +77,11 @@ export default function HeroSection() {
                   boxShadow: 'var(--shadow-cta)',
                 }}
               >
-                {/* PLACEHOLDER: Primary CTA label */}
-                [PLACEHOLDER: Primary CTA — e.g. "Save 52% + Free Shipping"]
+                Get Your Custom Fit — $239
               </Button>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <ShieldCheck className="w-4 h-4" style={{ color: 'hsl(var(--primary))' }} />
-                {/* PLACEHOLDER: Risk reversal micro-copy */}
-                <span>[PLACEHOLDER: Risk reversal — e.g. "180-Day Money Back Guarantee"]</span>
+                <span>Try Risk-Free — 30-Day Money-Back Guarantee</span>
               </div>
             </div>
           </motion.div>
@@ -102,10 +95,9 @@ export default function HeroSection() {
           >
             {/* Product image */}
             <div className="flex-1 rounded-2xl overflow-hidden border border-border bg-secondary aspect-[4/5] flex items-center justify-center">
-              {/* PLACEHOLDER: Replace src with your product hero image */}
               <img
                 src="https://contourinsoles.com/cdn/shop/files/preview_images/WithBoxAngle_1.png?v=1778645149&width=800"
-                alt="[PLACEHOLDER: Product alt text]"
+                alt="Contour Custom Pro orthotics — custom fit at home"
                 className="w-full h-full object-cover"
               />
             </div>

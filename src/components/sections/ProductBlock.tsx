@@ -5,48 +5,45 @@ import { useRef } from 'react'
 import { Check, ShieldCheck, Truck, RotateCcw } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
-// PLACEHOLDER: Replace with your product's actual variants
-const VARIANTS = ['[Option A]', '[Option B]']
+const VARIANTS = ['Men\'s (US 7–13)', 'Women\'s (US 5–11)']
 
-// PLACEHOLDER: Replace with your actual pricing tiers
 const PRICING_TIERS = [
   {
     label: 'Most Popular',
     tag: '🤩 MOST POPULAR',
-    sublabel: '[PLACEHOLDER: e.g. "Subscribe & Save — Monthly Supply"]',
-    priceNow: '$[XX.XX]',
-    priceWas: '$[XX.XX]',
-    perDay: '$[X.XX]/day',
-    badge: 'SAVE [X]%',
+    sublabel: 'One pair — fits both shoes. Lasts 2–3+ years.',
+    priceNow: '$239',
+    priceWas: '$299',
+    perDay: '~$0.25/day',
+    badge: 'SAVE 20%',
     highlighted: true,
     perks: [
-      '[PLACEHOLDER: perk 1 — e.g. "Free Shipping Today"]',
-      '[PLACEHOLDER: perk 2 — e.g. "25% Off Every Order"]',
-      '[PLACEHOLDER: perk 3 — e.g. "Cancel Anytime"]',
+      'Free shipping',
+      '30-day money-back guarantee',
+      'Free replacement if molding goes wrong',
     ],
   },
   {
-    label: 'One-Time',
-    tag: 'ONE-TIME PURCHASE',
-    sublabel: '[PLACEHOLDER: e.g. "Single Order — No Commitment"]',
-    priceNow: '$[XX.XX]',
-    priceWas: '$[XX.XX]',
-    perDay: '$[X.XX]/day',
-    badge: 'SAVE [X]%',
+    label: 'Two Pairs',
+    tag: '2-PAIR BUNDLE',
+    sublabel: 'One pair per shoe type — dedicate a pair to each.',
+    priceNow: '$399',
+    priceWas: '$598',
+    perDay: '~$0.21/day per pair',
+    badge: 'SAVE 33%',
     highlighted: false,
     perks: [
-      '[PLACEHOLDER: perk 1]',
-      '[PLACEHOLDER: perk 2]',
+      'Free shipping',
+      '30-day money-back guarantee',
     ],
   },
 ]
 
-// PLACEHOLDER: Replace with your product's benefit checkmarks
 const PRODUCT_BENEFITS = [
-  '[PLACEHOLDER: Key benefit 1]',
-  '[PLACEHOLDER: Key benefit 2]',
-  '[PLACEHOLDER: Key benefit 3]',
-  '[PLACEHOLDER: Key benefit 4]',
+  'Molds to your arch under your real bodyweight — in motion',
+  'Sets into a rigid custom shell. No soft foam that compresses flat.',
+  'Sits at factory insole profile — fits sneakers, boots, dress shoes',
+  'Patented HydroFit technology · US Patent 7,017,218 B2',
 ]
 
 export default function ProductBlock() {
@@ -67,13 +64,11 @@ export default function ProductBlock() {
           transition={{ duration: 0.6 }}
           className="text-center mb-10"
         >
-          {/* PLACEHOLDER: Product block heading */}
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
-            [PLACEHOLDER: Product Section Heading — e.g. "Contour Custom Pro"]
+            Contour Custom Pro
           </h2>
           <p className="text-muted-foreground mt-2 text-base md:text-lg">
-            {/* PLACEHOLDER: Product section subheading */}
-            [PLACEHOLDER: Short product description — e.g. "60+ potent ingredients for whole-body support"]
+            Custom orthotics that mold to your feet at home in 15 minutes. Patented HydroFit technology · Medical-grade materials · Built to last 2–3+ years.
           </p>
         </motion.div>
 
@@ -103,8 +98,7 @@ export default function ProductBlock() {
           >
             {/* Variant selector */}
             <div>
-              {/* PLACEHOLDER: Variant selector label — e.g. "Select Flavor:", "Select Size:", "Select Model:" */}
-              <p className="text-sm font-semibold text-foreground mb-2">[PLACEHOLDER: Variant Label — e.g. "Select Size:"]</p>
+              <p className="text-sm font-semibold text-foreground mb-2">Select Size:</p>
               <div className="flex gap-2 flex-wrap">
                 {VARIANTS.map((v, i) => (
                   <button
@@ -135,8 +129,7 @@ export default function ProductBlock() {
 
             {/* Pricing tiers */}
             <div className="flex flex-col gap-3">
-              {/* PLACEHOLDER: Label above tiers */}
-              <p className="text-sm font-semibold text-foreground">[PLACEHOLDER: Pricing label — e.g. "Autoship and Save:"]</p>
+              <p className="text-sm font-semibold text-foreground">Choose Your Package:</p>
               {PRICING_TIERS.map((tier, i) => (
                 <button
                   key={i}
@@ -179,15 +172,14 @@ export default function ProductBlock() {
               className="w-full rounded-xl text-base font-bold py-6 transition-transform hover:scale-[1.02]"
               style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))', boxShadow: 'var(--shadow-cta)' }}
             >
-              {/* PLACEHOLDER: Purchase CTA label */}
-              [PLACEHOLDER: Purchase CTA — e.g. "Get 52% Off + Free Shipping"]
+              Get Your Custom Fit — Free Shipping
             </Button>
 
             {/* Micro-trust row */}
             <div className="flex items-center justify-center gap-4 text-xs text-muted-foreground flex-wrap">
-              <span className="flex items-center gap-1"><ShieldCheck className="w-3.5 h-3.5" style={{ color: 'hsl(var(--primary))' }} /> [Guarantee]</span>
-              <span className="flex items-center gap-1"><Truck className="w-3.5 h-3.5" style={{ color: 'hsl(var(--primary))' }} /> [Shipping promise]</span>
-              <span className="flex items-center gap-1"><RotateCcw className="w-3.5 h-3.5" style={{ color: 'hsl(var(--primary))' }} /> [Return policy]</span>
+              <span className="flex items-center gap-1"><ShieldCheck className="w-3.5 h-3.5" style={{ color: 'hsl(var(--primary))' }} /> 30-Day Guarantee</span>
+              <span className="flex items-center gap-1"><Truck className="w-3.5 h-3.5" style={{ color: 'hsl(var(--primary))' }} /> Free Shipping</span>
+              <span className="flex items-center gap-1"><RotateCcw className="w-3.5 h-3.5" style={{ color: 'hsl(var(--primary))' }} /> Free Replacement</span>
             </div>
           </motion.div>
         </div>
