@@ -2,13 +2,11 @@ import PromoBanner from '@/components/sections/PromoBanner'
 import SiteHeader from '@/components/sections/SiteHeader'
 import HeroSection from '@/components/sections/HeroSection'
 import BenefitSections from '@/components/sections/BenefitSections'
-import PivotSection from '@/components/sections/PivotSection'
 import HowItWorks from '@/components/sections/HowItWorks'
 import ComparisonTable from '@/components/sections/ComparisonTable'
 import ProductBlock from '@/components/sections/ProductBlock'
 import TrustStrip from '@/components/sections/TrustStrip'
 import Testimonials from '@/components/sections/Testimonials'
-import FAQSection from '@/components/sections/FAQSection'
 import FinalCTA from '@/components/sections/FinalCTA'
 
 const Index = () => {
@@ -26,10 +24,7 @@ const Index = () => {
       {/* 4. 6 Numbered barrier sections */}
       <BenefitSections />
 
-      {/* 5. Pivot — "So what actually changed?" */}
-      <PivotSection />
-
-      {/* 6. How It Works — 3-step mechanism */}
+      {/* 5. How It Works — 3-step mechanism */}
       <HowItWorks />
 
       {/* 7. Barrier ↔ Solution comparison table */}
@@ -44,10 +39,7 @@ const Index = () => {
       {/* 10. Customer testimonials */}
       <Testimonials />
 
-      {/* 11. FAQ accordion */}
-      <FAQSection />
-
-      {/* 12. Final closing CTA */}
+      {/* 11. Final closing CTA */}
       <FinalCTA />
     </div>
   )

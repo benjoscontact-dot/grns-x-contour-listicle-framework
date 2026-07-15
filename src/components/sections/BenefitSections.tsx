@@ -47,20 +47,19 @@ const BENEFITS: Benefit[] = [
   },
   {
     number: '05',
-    heading: 'The Ones That Didn\'t Work (Or Made It Worse)',
-    body: 'Maybe you did get custom orthotics. And they didn\'t help. Or worse, they made your feet feel even more painful than before. This happens more than clinics admit. A mold taken wrong, a modification missed, an arch built too aggressively. And now you\'re out $500+ with orthotics collecting dust in a drawer, and less trust in the entire process than when you started. "Why does it feel like nothing is helping?" Sound familiar?',
+    heading: 'Then a Podiatrist Got Tired of Watching People Walk Away',
+    stat: 'For five years, this technology was prescription-only. More than 350 podiatrists across the U.S. fitted it to over 20,000 patients before it was released directly to the public.',
+    body: 'Dr. Tim Nguyen has practiced podiatry in Oxnard, California for over 40 years. His waiting room is full and he\'s booked three months out. So he spent a decade building something his colleagues called reckless: a true custom orthotic you fit yourself, at home, in 15 minutes. No referral. No casting appointment. No lab.',
     imageUrl: 'https://contourinsoles.com/cdn/shop/files/CONTOUR_SIDE_VIEW2_PDP_PIC.png?v=1776807537&width=800',
     imageAlt: 'Contour Custom Pro side profile showing slim fit',
-
   },
   {
     number: '06',
-    heading: "They Don't Fit Your Actual Life",
-    body: "Prescription orthotics are thick. They make your shoes tight. They don't transfer between shoes easily. You can't wear them in your dress shoes, your work boots, your everyday sneakers, so the pair you spent $500 on only works in one pair of shoes. The moment convenience drops, compliance drops. And orthotics that live in your closet don't fix your feet.",
+    heading: "The $500 Gamble Is Gone. The Risk Is Ours Now.",
+    body: "This is the part Dr. Nguyen insisted on, because it removes the last reason to wait. Fit them. Wear them for 180 days. If you're not moving better, standing longer, and doing more, you get every dollar back. You don't even send them back, because they're molded to your feet and no good to anyone else. Compare the math: $600 to $800 at the clinic with no refund possible, or $239 once, protected for 180 days.",
     imageUrl: 'https://contourinsoles.com/cdn/shop/files/Mood_Photo_2_Top.png?v=1776807381&width=800',
     imageAlt: 'Contour Custom Pro sitting flat inside a normal shoe',
-
-    ctaLabel: 'See How Contour Is Different',
+    ctaLabel: 'Get Your Custom Fit for $239',
   },
 ]
 
