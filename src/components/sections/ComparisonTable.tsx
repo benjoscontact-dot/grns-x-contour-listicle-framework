@@ -93,7 +93,7 @@ export default function ComparisonTable() {
           >
             Get Your Custom Fit for $239
           </Button>
-          <p className="text-xs text-muted-foreground">Free shipping · 30-day money-back guarantee</p>
+          <p className="text-xs text-muted-foreground">Free shipping · 180-Day Money-Back Guarantee</p>
         </motion.div>
       </div>
     </section>

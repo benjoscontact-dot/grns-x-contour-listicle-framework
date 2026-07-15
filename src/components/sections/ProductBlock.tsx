@@ -19,7 +19,7 @@ const PRICING_TIERS = [
     highlighted: true,
     perks: [
       'Free shipping',
-      '30-day money-back guarantee',
+      '180-Day Money-Back Guarantee',
       'Free replacement if molding goes wrong',
     ],
   },
@@ -34,7 +34,7 @@ const PRICING_TIERS = [
     highlighted: false,
     perks: [
       'Free shipping',
-      '30-day money-back guarantee',
+      '180-Day Money-Back Guarantee',
     ],
   },
 ]
@@ -177,7 +177,7 @@ export default function ProductBlock() {
 
             {/* Micro-trust row */}
             <div className="flex items-center justify-center gap-4 text-xs text-muted-foreground flex-wrap">
-              <span className="flex items-center gap-1"><ShieldCheck className="w-3.5 h-3.5" style={{ color: 'hsl(var(--primary))' }} /> 30-Day Guarantee</span>
+              <span className="flex items-center gap-1"><ShieldCheck className="w-3.5 h-3.5" style={{ color: 'hsl(var(--primary))' }} /> 180-Day Guarantee</span>
               <span className="flex items-center gap-1"><Truck className="w-3.5 h-3.5" style={{ color: 'hsl(var(--primary))' }} /> Free Shipping</span>
               <span className="flex items-center gap-1"><RotateCcw className="w-3.5 h-3.5" style={{ color: 'hsl(var(--primary))' }} /> Free Replacement</span>
             </div>

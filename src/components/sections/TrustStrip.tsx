@@ -6,8 +6,8 @@ import { ShieldCheck, Star, Truck, RotateCcw, Award, Users } from 'lucide-react'
 const TRUST_BADGES = [
   {
     icon: ShieldCheck,
-    title: '30-Day Money-Back Guarantee',
-    subtitle: 'Wear them for 30 days. Not feeling the difference? Full refund — no questions asked.',
+    title: '180-Day Money-Back Guarantee',
+    subtitle: 'Wear them for 180 days. Not feeling the difference? Full refund, no questions asked.',
   },
   {
     icon: Star,

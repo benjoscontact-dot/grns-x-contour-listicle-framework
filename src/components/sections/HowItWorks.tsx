@@ -118,7 +118,7 @@ export default function HowItWorks() {
           >
             Get Your Custom Fit for $239
           </Button>
-          <p className="text-xs text-muted-foreground">Free shipping · 30-day guarantee · Free replacement if anything's off</p>
+          <p className="text-xs text-muted-foreground">Free shipping · 180-Day Money-Back Guarantee · Free replacement if anything's off</p>
         </motion.div>
       </div>
     </section>

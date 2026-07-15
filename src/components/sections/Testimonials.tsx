@@ -47,8 +47,8 @@ const TESTIMONIALS = [
   {
     name: 'Patricia L.',
     tag: 'Verified Purchase',
-    headline: '"The 30-day guarantee made me try it"',
-    body: 'I\'ve wasted money on so many insoles. The guarantee is what made me finally try. Two months later I\'ve already ordered a second pair for my walking shoes. The first pair has been in my work boots every single day.',
+    headline: '"The 180-day guarantee made me try it"',
+    body: 'I\'ve wasted money on so many insoles. The 180-day guarantee is what made me finally try. Two months later I\'ve already ordered a second pair for my walking shoes. The first pair has been in my work boots every single day.',
     stars: 5,
     avatar: 'https://i.pravatar.cc/96?img=32',
   },

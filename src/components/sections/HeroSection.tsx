@@ -81,7 +81,7 @@ export default function HeroSection() {
               </Button>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <ShieldCheck className="w-4 h-4" style={{ color: 'hsl(var(--primary))' }} />
-                <span>Try Risk-Free — 30-Day Money-Back Guarantee</span>
+                <span>Try Risk-Free — 180-Day Money-Back Guarantee</span>
               </div>
             </div>
           </motion.div>

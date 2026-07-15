@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 
 const CLOSING_PERKS = [
   'Free Shipping on Every Order',
-  '30-Day Money-Back Guarantee. You Keep the Orthotics.',
+  '180-Day Money-Back Guarantee. You Keep the Orthotics.',
   'Free Replacement if Molding Goes Wrong',
   'Lasts 2–3+ Years (~$0.25/day)',
 ]
@@ -30,7 +30,7 @@ export default function FinalCTA() {
             className="text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full"
             style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))' }}
           >
-            Free Shipping · 30-Day Guarantee
+            Free Shipping · 180-Day Guarantee
           </span>
 
           <h2 className="font-heading text-3xl md:text-5xl font-extrabold leading-tight" style={{ color: 'hsl(0 0% 100%)' }}>
@@ -79,7 +79,7 @@ export default function FinalCTA() {
           {/* Guarantee micro-copy */}
           <div className="flex items-center gap-2 text-sm" style={{ color: 'hsl(0 0% 100% / 0.55)' }}>
             <ShieldCheck className="w-4 h-4" style={{ color: 'hsl(var(--primary))' }} />
-            30-Day Money-Back Guarantee. You keep the orthotics either way.
+            180-Day Money-Back Guarantee. You keep the orthotics either way.
           </div>
         </motion.div>
       </div>
