@@ -32,10 +32,10 @@ const BENEFITS: Benefit[] = [
   },
   {
     number: '03',
-    heading: 'The Price Tag That Stops You Cold',
-    body: 'Even when insurance does cover part of it, custom orthotics from a clinic run $400-$800 out of pocket. Without coverage, you\'re looking at the full amount, for a product you\'ve never tried, from a process you can\'t undo, with no guarantee it\'ll actually work for your feet. That math doesn\'t feel safe. So you buy another pair of $40 drugstore insoles, and they compress flat in three weeks. Again.',
-    imageUrl: 'https://contourinsoles.com/cdn/shop/files/CONTOUR_HAND_VIEW_PDP_PIC.png?v=1776807537&width=800',
-    imageAlt: 'Contour Custom Pro insole held in hand showing slim profile',
+    heading: 'Foot Pain Doesn\'t Stay in Your Feet',
+    body: '77% of Americans have experienced foot pain — and roughly half say it has limited their daily activities: walking, exercising, working, playing with their kids. When every step hurts, you move less. And when you move less, everything else pays: your knees and hips absorb what your arches won\'t, your step count drops, your energy and mood tend to follow. That\'s the real bill for another year of waiting.',
+    imageUrl: '/images/benefit-3-foot-pain.png',
+    imageAlt: 'Woman sitting on couch holding her foot in pain',
 
   },
   {
