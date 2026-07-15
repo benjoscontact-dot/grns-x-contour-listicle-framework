@@ -25,7 +25,7 @@ const BENEFITS: Benefit[] = [
   {
     number: '02',
     heading: 'The Insurance Nightmare',
-    body: 'You check your plan. It says it covers orthotics. You feel relieved, until the claim gets denied because it was a physiotherapist, not a podiatrist. Or because the provider wasn\'t in-network. Or because you needed a separate doctor\'s prescription you didn\'t know about until after you\'d already paid. Thousands of people go through this every year. You do everything right and still end up holding a $500 bill your insurance won\'t touch.',
+    body: 'You check your plan. It covers orthotics. Relief, until the claim gets denied: the provider was a physiotherapist, not a podiatrist. Or wasn\'t in-network. Thousands go through this every year. You did everything right and still owe $500 insurance won\'t touch.',
     imageUrl: 'https://contourinsoles.com/cdn/shop/files/Mood_Photo_2_Standing.png?v=1776807568&width=800',
     imageAlt: 'Person standing comfortably with Contour insoles',
 
