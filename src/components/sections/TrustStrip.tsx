@@ -1,38 +1,47 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { ShieldCheck, Star, Truck, RotateCcw, Award, Users } from 'lucide-react'
+import { ShieldCheck, Truck, RotateCcw, Award, Users } from 'lucide-react'
 
 const TRUST_BADGES = [
   {
     icon: ShieldCheck,
     title: '180-Day Money-Back Guarantee',
     subtitle: 'Wear them for 180 days. Not feeling the difference? Full refund, no questions asked.',
+    logos: null,
   },
   {
-    icon: Star,
-    title: '4.7 Stars · 39+ Reviews',
+    icon: Users,
+    title: '20,000 Patients Fitted Across the U.S. by 350+ Podiatrists',
     subtitle: 'Real verified customers. Not paid endorsements.',
+    logos: null,
   },
   {
     icon: Truck,
-    title: 'Free Shipping on All Orders',
-    subtitle: 'No minimum. Ships fast.',
+    title: 'Clinically Proven Technology',
+    subtitle: 'Before Contour reached consumers, the same technology was already used in clinical settings. This isn\'t a product inspired by clinical care — it came from it.',
+    logos: [
+      { src: '/images/logo-apma.png', alt: 'American Podiatric Medical Association' },
+      { src: '/images/logo-acfas.png', alt: 'American College of Foot and Ankle Surgeons' },
+    ],
   },
   {
     icon: RotateCcw,
     title: 'Free Replacement If Anything\'s Off',
     subtitle: 'If your pair doesn\'t set right, we send a new kit at no charge.',
+    logos: null,
   },
   {
     icon: Award,
     title: 'University of Tokyo Tested',
     subtitle: 'Independently tested for biomechanical performance.',
+    logos: null,
   },
   {
     icon: Users,
     title: '20,000+ Feet Fitted',
     subtitle: 'Designed by Dr. Tim T. Nguyen, DPM — 40+ years in practice.',
+    logos: null,
   },
 ]
 
@@ -75,6 +84,18 @@ export default function TrustStrip() {
                 <div>
                   <p className="font-semibold text-foreground text-sm">{badge.title}</p>
                   <p className="text-muted-foreground text-xs mt-0.5">{badge.subtitle}</p>
+                  {badge.logos && (
+                    <div className="flex items-center justify-center gap-3 mt-3 flex-wrap">
+                      {badge.logos.map((logo) => (
+                        <img
+                          key={logo.alt}
+                          src={logo.src}
+                          alt={logo.alt}
+                          className="h-8 w-auto object-contain opacity-80"
+                        />
+                      ))}
+                    </div>
+                  )}
                 </div>
               </motion.div>
             )
