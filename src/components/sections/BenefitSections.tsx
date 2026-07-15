@@ -20,7 +20,7 @@ const BENEFITS: Benefit[] = [
     body: 'Getting them is not just one appointment. It\'s a consultation, a fitting, a follow-up, sometimes a referral to a specialist you didn\'t know you needed, all during business hours, all requiring time off work. An endless cycle but YOU need help NOW.',
     imageUrl: '/images/benefit-1-wait.png',
     imageAlt: '6-8 weeks wait time for prescription orthotics',
-    ctaLabel: 'Skip the Clinic — Get Fitted at Home',
+
   },
   {
     number: '02',
