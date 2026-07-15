@@ -89,7 +89,7 @@ export default function Testimonials() {
           <div className="flex items-center justify-center gap-3 mt-4">
             <StarRow count={5} />
             <span className="text-sm font-medium text-foreground">
-              4.7 / 5 · 39+ verified reviews · 20,000+ feet fitted
+              20,000+ patients fitted
             </span>
           </div>
         </motion.div>
