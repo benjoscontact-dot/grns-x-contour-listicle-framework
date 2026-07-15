@@ -26,8 +26,8 @@ const BENEFITS: Benefit[] = [
     number: '02',
     heading: 'The Insurance Nightmare',
     body: 'You check your plan. It covers orthotics. Relief, until the claim gets denied: the provider was a physiotherapist, not a podiatrist. Or wasn\'t in-network. Thousands go through this every year. You did everything right and still owe $500 insurance won\'t touch.',
-    imageUrl: 'https://contourinsoles.com/cdn/shop/files/Mood_Photo_2_Standing.png?v=1776807568&width=800',
-    imageAlt: 'Person standing comfortably with Contour insoles',
+    imageUrl: '/images/benefit-2-insurance.png',
+    imageAlt: '$500+ typical cost if your claim is denied — insurance nightmare chart',
 
   },
   {
