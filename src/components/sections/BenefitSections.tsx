@@ -50,8 +50,8 @@ const BENEFITS: Benefit[] = [
     heading: 'Then a Podiatrist Got Tired of Watching People Walk Away',
     stat: 'For five years, this technology was prescription-only. More than 350 podiatrists across the U.S. fitted it to over 20,000 patients before it was released directly to the public.',
     body: 'Dr. Tim Nguyen has practiced podiatry in Oxnard, California for over 40 years. His waiting room is full and he\'s booked three months out. So he spent a decade building something his colleagues called reckless: a true custom orthotic you fit yourself, at home, in 15 minutes. No referral. No casting appointment. No lab.',
-    imageUrl: 'https://contourinsoles.com/cdn/shop/files/CONTOUR_SIDE_VIEW2_PDP_PIC.png?v=1776807537&width=800',
-    imageAlt: 'Contour Custom Pro side profile showing slim fit',
+    imageUrl: '/images/benefit-5-doctor.png',
+    imageAlt: 'Dr. Tim T. Nguyen, DPM — Chief Medical Officer and inventor of HydroFit technology',
   },
   {
     number: '06',
