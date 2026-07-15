@@ -1,4 +1,3 @@
-import PromoBanner from '@/components/sections/PromoBanner'
 import SiteHeader from '@/components/sections/SiteHeader'
 import HeroSection from '@/components/sections/HeroSection'
 import BenefitSections from '@/components/sections/BenefitSections'
@@ -12,10 +11,7 @@ import FinalCTA from '@/components/sections/FinalCTA'
 const Index = () => {
   return (
     <div className="min-h-screen bg-background font-body">
-      {/* 1. Promo countdown banner */}
-      <PromoBanner />
-
-      {/* 2. Minimal logo header */}
+      {/* 1. Minimal logo header */}
       <SiteHeader />
 
       {/* 3. Hero */}

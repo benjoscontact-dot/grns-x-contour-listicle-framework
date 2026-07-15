@@ -2,14 +2,6 @@ import { motion } from 'framer-motion'
 import { ShieldCheck, Star } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
-const BENEFIT_ICONS = [
-  { label: 'Molds in 15 min at home' },
-  { label: 'No appointments needed' },
-  { label: 'No insurance fights' },
-  { label: 'Fits any shoe' },
-  { label: 'Free replacement guarantee' },
-]
-
 export default function HeroSection() {
   return (
     <section id="hero" className="bg-background py-8 md:py-12 px-4">
@@ -51,7 +43,7 @@ export default function HeroSection() {
                 ))}
               </div>
               <span className="text-xs font-medium text-foreground">
-                4.7 stars · 39+ verified reviews
+                350+ podiatrists · 20,000+ patients fitted
               </span>
             </div>
 
@@ -86,36 +78,18 @@ export default function HeroSection() {
             </div>
           </motion.div>
 
-          {/* RIGHT: Product image + benefit sidebar */}
+          {/* RIGHT: Product image full size 1:1 */}
           <motion.div
             initial={{ opacity: 0, x: 24 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-            className="relative flex gap-3"
+            className="w-full rounded-2xl overflow-hidden aspect-square bg-secondary"
           >
-            {/* Product image */}
-            <div className="flex-1 rounded-2xl overflow-hidden border border-border bg-secondary aspect-[4/5] flex items-center justify-center">
-              <img
-                src="/images/hero-header.png"
-                alt="Contour Custom Pro orthotics — Podiatrists Choice, 20,000+ Americans trust this USPA Patented Instant Fit Technology"
-                className="w-full h-full object-cover"
-              />
-            </div>
-
-            {/* Benefit icon sidebar card */}
-            <div className="w-36 flex-shrink-0 rounded-2xl border border-border bg-background p-3 flex flex-col justify-around gap-1 shadow-sm">
-              {BENEFIT_ICONS.map((b, i) => (
-                <div key={i} className="flex flex-col items-center text-center gap-1 py-2 border-b border-border last:border-0">
-                  <div
-                    className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold"
-                    style={{ background: 'hsl(var(--secondary))', color: 'hsl(var(--primary))' }}
-                  >
-                    {i + 1}
-                  </div>
-                  <span className="text-[11px] leading-tight font-medium text-foreground">{b.label}</span>
-                </div>
-              ))}
-            </div>
+            <img
+              src="/images/hero-header-2.png"
+              alt="Contour Custom Pro orthotics — Podiatrists Choice, 20,000+ Americans trust this USPA Patented Instant Fit Technology"
+              className="w-full h-full object-cover"
+            />
           </motion.div>
         </div>
       </div>
