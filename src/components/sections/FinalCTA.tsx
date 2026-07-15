@@ -42,11 +42,11 @@ export default function FinalCTA() {
           </p>
 
           {/* Perks list */}
-          <ul className="flex flex-col gap-2 w-full max-w-sm">
+          <ul className="flex flex-col gap-2 w-full max-w-sm text-left">
             {CLOSING_PERKS.map((perk, i) => (
-              <li key={i} className="flex items-center gap-2 text-sm" style={{ color: 'hsl(0 0% 100% / 0.85)' }}>
-                <Check className="w-4 h-4 flex-shrink-0" style={{ color: 'hsl(var(--primary))' }} />
-                {perk}
+              <li key={i} className="flex items-start gap-2 text-sm" style={{ color: 'hsl(0 0% 100% / 0.85)' }}>
+                <Check className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: 'hsl(var(--primary))' }} />
+                <span>{perk}</span>
               </li>
             ))}
           </ul>
