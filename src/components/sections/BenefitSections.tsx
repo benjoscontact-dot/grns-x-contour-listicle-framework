@@ -57,8 +57,8 @@ const BENEFITS: Benefit[] = [
     number: '06',
     heading: "The $500 Gamble Is Gone. The Risk Is Ours Now.",
     body: "This is the part Dr. Nguyen insisted on, because it removes the last reason to wait. Fit them. Wear them for 180 days. If you're not moving better, standing longer, and doing more, you get every dollar back. You don't even send them back, because they're molded to your feet and no good to anyone else. Compare the math: $600 to $800 at the clinic with no refund possible, or $239 once, protected for 180 days.",
-    imageUrl: 'https://contourinsoles.com/cdn/shop/files/Mood_Photo_2_Top.png?v=1776807381&width=800',
-    imageAlt: 'Contour Custom Pro sitting flat inside a normal shoe',
+    imageUrl: '/images/benefit-6-doctor-credentials.png',
+    imageAlt: 'Dr. Tim T. Nguyen, DPM — Chief Medical Officer with verified credentials and Contour insoles',
     ctaLabel: 'Get Your Custom Fit for $239',
   },
 ]
