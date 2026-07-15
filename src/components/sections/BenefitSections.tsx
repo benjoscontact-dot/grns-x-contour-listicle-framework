@@ -20,7 +20,6 @@ const BENEFITS: Benefit[] = [
     body: 'Getting them is not just one appointment. It\'s a consultation, a fitting, a follow-up, sometimes a referral to a specialist you didn\'t know you needed, all during business hours, all requiring time off work. An endless cycle but YOU need help NOW.',
     imageUrl: '/images/benefit-1-wait.png',
     imageAlt: '6-8 weeks wait time for prescription orthotics',
-    stat: 'The average prescription orthotic process takes 6-8 weeks across 3-5 separate appointments.',
     ctaLabel: 'Skip the Clinic — Get Fitted at Home',
   },
   {
@@ -29,7 +28,7 @@ const BENEFITS: Benefit[] = [
     body: 'You check your plan. It says it covers orthotics. You feel relieved, until the claim gets denied because it was a physiotherapist, not a podiatrist. Or because the provider wasn\'t in-network. Or because you needed a separate doctor\'s prescription you didn\'t know about until after you\'d already paid. Thousands of people go through this every year. You do everything right and still end up holding a $500 bill your insurance won\'t touch.',
     imageUrl: 'https://contourinsoles.com/cdn/shop/files/Mood_Photo_2_Standing.png?v=1776807568&width=800',
     imageAlt: 'Person standing comfortably with Contour insoles',
-    stat: 'The average custom orthotic insurance claim requires 3-4 separate documents from 2+ providers.',
+
   },
   {
     number: '03',
@@ -37,7 +36,7 @@ const BENEFITS: Benefit[] = [
     body: 'Even when insurance does cover part of it, custom orthotics from a clinic run $400-$800 out of pocket. Without coverage, you\'re looking at the full amount, for a product you\'ve never tried, from a process you can\'t undo, with no guarantee it\'ll actually work for your feet. That math doesn\'t feel safe. So you buy another pair of $40 drugstore insoles, and they compress flat in three weeks. Again.',
     imageUrl: 'https://contourinsoles.com/cdn/shop/files/CONTOUR_HAND_VIEW_PDP_PIC.png?v=1776807537&width=800',
     imageAlt: 'Contour Custom Pro insole held in hand showing slim profile',
-    stat: 'Clinic customs: $400-$800 + 2-6 weeks. Contour Custom Pro: $239, lasts 2-3+ years (~$0.25/day).',
+
   },
   {
     number: '04',
@@ -45,7 +44,7 @@ const BENEFITS: Benefit[] = [
     body: 'After all the appointments and paperwork, your orthotics go to a lab. You wait 2-6 weeks. Your feet don\'t stop hurting while you wait. When they finally arrive, they\'re made from a static mold, a plaster cast or foam box impression of your foot standing still. Not walking. Not under your real weight. A snapshot of your foot doing nothing, turned into a rigid shell you\'re supposed to wear every day.',
     imageUrl: 'https://contourinsoles.com/cdn/shop/files/CONTOUR_MIXED_VIEW_PDP_PIC.png?v=1776807537&width=800',
     imageAlt: 'Contour Custom Pro orthotics multiple angles',
-    stat: 'Clinic timeline: Week 1 consult, Week 2 fitting, Weeks 3-6 lab, Week 7 pickup. Contour: 15 minutes, done.',
+
   },
   {
     number: '05',
@@ -53,7 +52,7 @@ const BENEFITS: Benefit[] = [
     body: 'Maybe you did get custom orthotics. And they didn\'t help. Or worse, they made your feet feel even more painful than before. This happens more than clinics admit. A mold taken wrong, a modification missed, an arch built too aggressively. And now you\'re out $500+ with orthotics collecting dust in a drawer, and less trust in the entire process than when you started. "Why does it feel like nothing is helping?" Sound familiar?',
     imageUrl: 'https://contourinsoles.com/cdn/shop/files/CONTOUR_SIDE_VIEW2_PDP_PIC.png?v=1776807537&width=800',
     imageAlt: 'Contour Custom Pro side profile showing slim fit',
-    stat: '"Since putting the orthotic in my shoes, my feet feel even WORSE." A frustration shared by more customers than any clinic will admit.',
+
   },
   {
     number: '06',
@@ -61,7 +60,7 @@ const BENEFITS: Benefit[] = [
     body: "Prescription orthotics are thick. They make your shoes tight. They don't transfer between shoes easily. You can't wear them in your dress shoes, your work boots, your everyday sneakers, so the pair you spent $500 on only works in one pair of shoes. The moment convenience drops, compliance drops. And orthotics that live in your closet don't fix your feet.",
     imageUrl: 'https://contourinsoles.com/cdn/shop/files/Mood_Photo_2_Top.png?v=1776807381&width=800',
     imageAlt: 'Contour Custom Pro sitting flat inside a normal shoe',
-    stat: 'After setting, Contour sits at the same profile as the factory insole it replaces. Works in sneakers, boots, dress shoes, and most work shoes.',
+
     ctaLabel: 'See How Contour Is Different',
   },
 ]
