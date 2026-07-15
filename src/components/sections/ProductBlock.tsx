@@ -172,7 +172,7 @@ export default function ProductBlock() {
               className="w-full rounded-xl text-base font-bold py-6 transition-transform hover:scale-[1.02]"
               style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))', boxShadow: 'var(--shadow-cta)' }}
             >
-              Get Your Custom Fit — Free Shipping
+              Get Your Custom Fit + Free Shipping
             </Button>
 
             {/* Micro-trust row */}

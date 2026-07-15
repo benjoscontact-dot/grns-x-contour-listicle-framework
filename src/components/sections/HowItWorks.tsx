@@ -16,7 +16,7 @@ const STEPS = [
     number: '02',
     icon: Footprints,
     title: 'Walk to Mold',
-    body: 'Place in your shoes. Walk for ~5 minutes. The HydroFit core molds precisely to your arch, heel, and pressure points — under your real bodyweight, in motion. Not a static impression. Your actual gait.',
+    body: 'Place in your shoes. Walk for ~5 minutes. The HydroFit core molds precisely to your arch, heel, and pressure points, under your real bodyweight, in motion. Not a static impression. Your actual gait.',
     detail: 'Unlike clinic molds taken standing still, this captures how your foot actually moves.',
   },
   {
@@ -85,7 +85,7 @@ export default function HowItWorks() {
 
                 <div className="flex flex-col gap-2">
                   <h3 className="font-heading text-lg font-bold text-foreground">
-                    Step {step.number} — {step.title}
+                    Step {step.number}: {step.title}
                   </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{step.body}</p>
                 </div>
@@ -116,7 +116,7 @@ export default function HowItWorks() {
             className="rounded-full px-10 font-bold transition-transform hover:scale-105"
             style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))', boxShadow: 'var(--shadow-cta)' }}
           >
-            Get Your Custom Fit — $239
+            Get Your Custom Fit for $239
           </Button>
           <p className="text-xs text-muted-foreground">Free shipping · 30-day guarantee · Free replacement if anything's off</p>
         </motion.div>

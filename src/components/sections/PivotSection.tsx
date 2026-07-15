@@ -34,7 +34,7 @@ export default function PivotSection() {
               The problem was never the solution. It was the process.
             </p>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              What if you could get the same clinical-grade custom fit — molded to <em>your</em> arch, under <em>your</em> weight, in <em>your</em> shoes — in 15 minutes at home?
+              What if you could get the same clinical-grade custom fit, molded to <em>your</em> arch, under <em>your</em> weight, in <em>your</em> shoes — in 15 minutes at home?
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               No appointments. No insurance fights. No lab. No waiting.

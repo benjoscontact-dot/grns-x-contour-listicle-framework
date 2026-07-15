@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 
 const CLOSING_PERKS = [
   'Free Shipping on Every Order',
-  '30-Day Money-Back Guarantee — You Keep the Orthotics',
+  '30-Day Money-Back Guarantee. You Keep the Orthotics.',
   'Free Replacement if Molding Goes Wrong',
   'Lasts 2–3+ Years (~$0.25/day)',
 ]
@@ -38,7 +38,7 @@ export default function FinalCTA() {
           </h2>
 
           <p className="text-base md:text-lg" style={{ color: 'hsl(0 0% 100% / 0.65)' }}>
-            We know you've been burned before. That's why we don't ask you to trust us on day one — we ask you to try us. Wear them for 30 days. If you're not feeling the difference, we'll send a free replacement pair or refund every penny. No restocking fee. No return shipping. The orthotics are yours either way.
+            We know you've been burned before. That's why we don't ask you to trust us on day one, we ask you to try us. Wear them for 30 days. If you're not feeling the difference, we'll send a free replacement pair or refund every penny. No restocking fee. No return shipping. The orthotics are yours either way.
           </p>
 
           {/* Perks list */}
@@ -73,7 +73,7 @@ export default function FinalCTA() {
             className="w-full max-w-sm rounded-full py-6 text-lg font-bold transition-transform hover:scale-105"
             style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))', boxShadow: 'var(--shadow-cta)' }}
           >
-            Get Your Custom Fit — $239 + Free Shipping
+            Get Your Custom Fit for $239 + Free Shipping
           </Button>
 
           {/* Guarantee micro-copy */}

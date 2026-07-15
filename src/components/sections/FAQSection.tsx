@@ -92,7 +92,7 @@ export default function FAQSection() {
             className="rounded-full px-10 font-bold transition-transform hover:scale-105"
             style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))', boxShadow: 'var(--shadow-cta)' }}
           >
-            Get Your Custom Fit — $239
+            Get Your Custom Fit for $239
           </Button>
           <p className="text-xs text-muted-foreground">Free shipping · 30-day money-back guarantee · Free replacement if anything's off</p>
         </motion.div>

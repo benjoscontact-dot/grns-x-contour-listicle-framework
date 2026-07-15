@@ -63,7 +63,7 @@ export default function HeroSection() {
 
             {/* Subheadline / hook */}
             <p className="text-muted-foreground text-lg leading-relaxed">
-              You already know orthotics would help. Your feet remind you every morning. But between the appointments, the insurance fights, and the $500+ price tags — getting them has felt like its own kind of pain. Here's why it's not your fault, and what finally changed.
+              You already know orthotics would help. Your feet remind you every morning. But between the appointments, the insurance fights, and the $500+ price tags, getting them has felt like its own kind of pain. Here's why it's not your fault, and what finally changed.
             </p>
 
             {/* CTA block */}
@@ -77,7 +77,7 @@ export default function HeroSection() {
                   boxShadow: 'var(--shadow-cta)',
                 }}
               >
-                Get Your Custom Fit — $239
+                Get Your Custom Fit for $239
               </Button>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <ShieldCheck className="w-4 h-4" style={{ color: 'hsl(var(--primary))' }} />
