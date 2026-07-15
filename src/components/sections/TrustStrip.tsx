@@ -38,9 +38,9 @@ const TRUST_BADGES = [
     logos: null,
   },
   {
-    icon: Users,
-    title: '20,000+ Feet Fitted',
-    subtitle: 'Designed by Dr. Tim T. Nguyen, DPM — 40+ years in practice.',
+    icon: Award,
+    title: 'Patented HydroFit Custom Molding (US Patent 7,017,218 B2)',
+    subtitle: 'A water-activated fiberglass-resin composite, refined over a decade of clinical research.',
     logos: null,
   },
 ]
