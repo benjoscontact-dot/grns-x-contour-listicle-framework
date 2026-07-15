@@ -96,8 +96,8 @@ export default function HeroSection() {
             {/* Product image */}
             <div className="flex-1 rounded-2xl overflow-hidden border border-border bg-secondary aspect-[4/5] flex items-center justify-center">
               <img
-                src="https://contourinsoles.com/cdn/shop/files/preview_images/WithBoxAngle_1.png?v=1778645149&width=800"
-                alt="Contour Custom Pro orthotics — custom fit at home"
+                src="/images/hero-header.png"
+                alt="Contour Custom Pro orthotics — Podiatrists Choice, 20,000+ Americans trust this USPA Patented Instant Fit Technology"
                 className="w-full h-full object-cover"
               />
             </div>
