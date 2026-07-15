@@ -40,11 +40,10 @@ const BENEFITS: Benefit[] = [
   },
   {
     number: '04',
-    heading: 'The Weeks of Waiting (While Your Feet Keep Hurting)',
-    body: 'After all the appointments and paperwork, your orthotics go to a lab. You wait 2-6 weeks. Your feet don\'t stop hurting while you wait. When they finally arrive, they\'re made from a static mold, a plaster cast or foam box impression of your foot standing still. Not walking. Not under your real weight. A snapshot of your foot doing nothing, turned into a rigid shell you\'re supposed to wear every day.',
-    imageUrl: 'https://contourinsoles.com/cdn/shop/files/CONTOUR_MIXED_VIEW_PDP_PIC.png?v=1776807537&width=800',
-    imageAlt: 'Contour Custom Pro orthotics multiple angles',
-
+    heading: "You're not paying for the orthotic.",
+    body: "The materials in a custom insole cost a fraction of what you're quoted. You're paying for the office, the chair, the 12-minute casting, and the lab's markup. And if the first pair isn't right, which happens, the adjustment is another visit. There's no return window on a $650 pair of insoles.",
+    imageUrl: '/images/benefit-4-markup.png',
+    imageAlt: 'Doctor holding a medical bill showing the hidden costs behind prescription orthotics',
   },
   {
     number: '05',
