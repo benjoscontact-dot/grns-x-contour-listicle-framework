@@ -4,6 +4,7 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { Check, ShieldCheck } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import posthog from '@/lib/posthog'
 
 const SHOPIFY_DOMAIN = 'https://contourinsoles.com'
 
@@ -134,7 +135,11 @@ export default function ProductBlock() {
                 {GENDERS.map((g) => (
                   <button
                     key={g}
-                    onClick={() => { setSelectedGender(g); setSelectedSize(0) }}
+                    onClick={() => {
+                      setSelectedGender(g)
+                      setSelectedSize(0)
+                      posthog.capture('gender_selected', { gender: g })
+                    }}
                     className={`px-6 py-2 rounded-lg border text-sm font-medium transition-colors ${
                       selectedGender === g
                         ? 'border-primary text-primary-foreground'
@@ -157,7 +162,10 @@ export default function ProductBlock() {
                 {sizes.map((s, i) => (
                   <button
                     key={s.id}
-                    onClick={() => setSelectedSize(i)}
+                    onClick={() => {
+                      setSelectedSize(i)
+                      posthog.capture('size_selected', { gender: selectedGender, size_label: s.label, size_index: i })
+                    }}
                     className={`px-4 py-2 rounded-lg border text-sm font-medium transition-colors ${
                       selectedSize === i
                         ? 'border-primary text-primary-foreground'
@@ -199,7 +207,15 @@ export default function ProductBlock() {
                       )}
                     </div>
                     <button
-                      onClick={() => setSelectedTier(i)}
+                      onClick={() => {
+                        setSelectedTier(i)
+                        posthog.capture('pricing_tier_selected', {
+                          tier_label: tier.label,
+                          tier_qty: tier.qty,
+                          tier_price: tier.price,
+                          most_popular: tier.mostPopular,
+                        })
+                      }}
                       className={`w-full rounded-2xl border-2 p-4 text-center transition-all ${
                         selectedTier === i
                           ? 'border-primary'
@@ -225,7 +241,20 @@ export default function ProductBlock() {
               className="w-full rounded-xl text-base font-bold py-6 transition-transform hover:scale-[1.02]"
               style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))', boxShadow: 'var(--shadow-cta)' }}
             >
-              <a href={checkoutUrl}>Add To Cart</a>
+              <a
+                href={checkoutUrl}
+                onClick={() =>
+                  posthog.capture('add_to_cart_clicked', {
+                    gender: selectedGender,
+                    size_label: sizes[selectedSize]?.label,
+                    variant_id: selectedVariantId,
+                    tier_label: PRICING_TIERS[selectedTier].label,
+                    tier_qty: PRICING_TIERS[selectedTier].qty,
+                    tier_price: PRICING_TIERS[selectedTier].price,
+                    checkout_url: checkoutUrl,
+                  })
+                }
+              >Add To Cart</a>
             </Button>
 
             {/* Guarantee card */}

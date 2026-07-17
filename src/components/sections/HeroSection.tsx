@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { ShieldCheck, Star } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import posthog from '@/lib/posthog'
 
 export default function HeroSection() {
   return (
@@ -70,7 +71,10 @@ export default function HeroSection() {
                   boxShadow: 'var(--shadow-cta)',
                 }}
               >
-                <a href="#offers">Get Your Custom Fit for $239</a>
+                <a
+                href="#offers"
+                onClick={() => posthog.capture('hero_cta_clicked', { cta_label: 'Get Your Custom Fit for $239', section: 'hero' })}
+              >Get Your Custom Fit for $239</a>
               </Button>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <ShieldCheck className="w-4 h-4" style={{ color: 'hsl(var(--primary))' }} />

@@ -3,6 +3,7 @@ import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { ShieldCheck, Check } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import posthog from '@/lib/posthog'
 
 const CLOSING_PERKS = [
   'Free Shipping on Every Order',
@@ -58,7 +59,10 @@ export default function FinalCTA() {
             className="w-full max-w-md rounded-full px-6 py-6 text-sm md:text-lg font-bold leading-tight transition-transform hover:scale-105"
             style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))', boxShadow: 'var(--shadow-cta)' }}
           >
-            <a href="#offers">Get Your Custom Fit for $239 + Free Shipping</a>
+            <a
+                href="#offers"
+                onClick={() => posthog.capture('final_cta_clicked', { cta_label: 'Get Your Custom Fit for $239 + Free Shipping', section: 'final_cta' })}
+              >Get Your Custom Fit for $239 + Free Shipping</a>
           </Button>
 
           {/* Guarantee micro-copy */}
