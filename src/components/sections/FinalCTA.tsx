@@ -51,21 +51,11 @@ export default function FinalCTA() {
             ))}
           </ul>
 
-          {/* Pricing summary + guarantee badge */}
-          <div className="flex flex-col sm:flex-row items-center gap-5 mt-2 mx-auto w-fit max-w-full">
-            <span className="font-heading text-5xl font-extrabold flex-shrink-0 leading-none" style={{ color: 'hsl(0 0% 100%)' }}>
+          {/* Pricing summary */}
+          <div className="flex items-baseline gap-3 mt-2">
+            <span className="font-heading text-4xl font-extrabold" style={{ color: 'hsl(0 0% 100%)' }}>
               $239
             </span>
-            {/* Guarantee card */}
-            <div className="flex items-center gap-3 rounded-2xl border border-border bg-background p-4 text-left w-full sm:w-auto sm:max-w-xs">
-              <div className="flex-shrink-0 w-11 h-11 rounded-full flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #4f8ef7, #6c5ce7)' }}>
-                <ShieldCheck className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <p className="font-bold text-foreground text-sm leading-snug">180-Day Money Back Guarantee</p>
-                <p className="text-muted-foreground text-xs mt-1 leading-snug">Try them for 30 days — if you don't love them, we'll send a free replacement or full refund.</p>
-              </div>
-            </div>
           </div>
 
           {/* Primary CTA */}
