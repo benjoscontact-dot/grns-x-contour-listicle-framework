@@ -66,11 +66,12 @@ export default function PivotSection() {
           </div>
 
           <Button
+            asChild
             size="lg"
             className="w-fit rounded-full px-8 font-bold transition-transform hover:scale-105"
             style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))', boxShadow: 'var(--shadow-cta)' }}
           >
-            See How It Works
+            <a href="#how-it-works">See How It Works</a>
           </Button>
         </motion.div>
       </div>

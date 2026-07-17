@@ -121,6 +121,7 @@ function BenefitItem({ benefit, index }: { benefit: Benefit; index: number }) {
         {/* Optional mid-section CTA */}
         {benefit.ctaLabel && (
           <Button
+            asChild
             size="lg"
             className="mt-2 w-fit rounded-full px-8 font-bold transition-transform hover:scale-105"
             style={{
@@ -129,7 +130,7 @@ function BenefitItem({ benefit, index }: { benefit: Benefit; index: number }) {
               boxShadow: 'var(--shadow-cta)',
             }}
           >
-            {benefit.ctaLabel}
+            <a href="#offers">{benefit.ctaLabel}</a>
           </Button>
         )}
       </div>

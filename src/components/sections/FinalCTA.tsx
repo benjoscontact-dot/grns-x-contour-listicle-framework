@@ -56,24 +56,16 @@ export default function FinalCTA() {
             <span className="font-heading text-4xl font-extrabold" style={{ color: 'hsl(0 0% 100%)' }}>
               $239
             </span>
-            <span className="text-lg line-through" style={{ color: 'hsl(0 0% 100% / 0.4)' }}>
-              $299
-            </span>
-            <span
-              className="text-xs font-bold uppercase rounded-full px-3 py-1"
-              style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))' }}
-            >
-              SAVE 20%
-            </span>
           </div>
 
           {/* Primary CTA */}
           <Button
+            asChild
             size="lg"
-            className="w-full max-w-sm rounded-full py-6 text-lg font-bold transition-transform hover:scale-105"
+            className="w-full max-w-md rounded-full px-6 py-6 text-sm md:text-lg font-bold leading-tight transition-transform hover:scale-105"
             style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))', boxShadow: 'var(--shadow-cta)' }}
           >
-            Get Your Custom Fit for $239 + Free Shipping
+            <a href="#offers">Get Your Custom Fit for $239 + Free Shipping</a>
           </Button>
 
           {/* Guarantee micro-copy */}

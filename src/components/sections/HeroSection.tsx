@@ -61,6 +61,7 @@ export default function HeroSection() {
             {/* CTA block */}
             <div className="flex flex-col gap-3">
               <Button
+                asChild
                 size="lg"
                 className="w-fit rounded-full px-8 py-4 text-base font-bold shadow-lg transition-transform hover:scale-105"
                 style={{
@@ -69,7 +70,7 @@ export default function HeroSection() {
                   boxShadow: 'var(--shadow-cta)',
                 }}
               >
-                Get Your Custom Fit for $239
+                <a href="#offers">Get Your Custom Fit for $239</a>
               </Button>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <ShieldCheck className="w-4 h-4" style={{ color: 'hsl(var(--primary))' }} />

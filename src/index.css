@@ -121,6 +121,10 @@ All colors MUST be HSL. Fonts use Google Fonts @import above.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground font-body;
   }

@@ -112,11 +112,12 @@ export default function HowItWorks() {
           className="flex flex-col items-center gap-3"
         >
           <Button
+            asChild
             size="lg"
             className="rounded-full px-10 font-bold transition-transform hover:scale-105"
             style={{ background: 'hsl(var(--primary))', color: 'hsl(var(--primary-foreground))', boxShadow: 'var(--shadow-cta)' }}
           >
-            Get Your Custom Fit for $239
+            <a href="#offers">Get Your Custom Fit for $239</a>
           </Button>
           <p className="text-xs text-muted-foreground">Free shipping · 180-Day Money-Back Guarantee · Free replacement if anything's off</p>
         </motion.div>
